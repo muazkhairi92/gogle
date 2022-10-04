@@ -20,7 +20,7 @@ const [selectedCountry, setSelectedCountry] = useState('Malaysia');
     }
     // console.log(universities);
   };
-
+// testtest
   useEffect(() => {
     if(selectedCountry) {fetchUniversities(selectedCountry);}
   }, [selectedCountry]);
