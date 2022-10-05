@@ -29,7 +29,7 @@ export const UpperNav = () => {
         {user?.roles.includes('admin') && token ?<NavLink to="/users" style={style}>Users</NavLink> : null}
         {token ?<NavLink to="/email/:id" style={style}>Email</NavLink> : null}
         {token ?<NavLink to="/userdet" style={style}>User Detail</NavLink> : null}
-        <NavLink to="/universities" style={style}>Universities</NavLink>
+        {/* <NavLink to="/universities" style={style}>Universities</NavLink> */}
         {token ? <NavLink onClick={() => signout()}>Logout</NavLink> : <NavLink to="/login" style={style}>Log In</NavLink>}
       </nav>
     );
