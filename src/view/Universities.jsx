@@ -30,7 +30,7 @@ const [selectedCountry, setSelectedCountry] = useState('Malaysia');
       <h2>List of Universities in </h2>
       <select value={selectedCountry} onChange={(e) => setSelectedCountry(e.target.value)}>
         {
-          ['Malaysia', 'Singapore', 'United Kingdom', 'France'].map(c => (
+          ['Malaysia', 'Singapore', 'Thailand', 'Indonesia'].map(c => (
             <option value={c}>{c}</option>
           ))
         }
