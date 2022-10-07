@@ -1,10 +1,10 @@
 
 import { Routes, Route, Link } from 'react-router-dom';
 import { Home } from './view/Home';
-import { About } from './view/About';
 import { Nomatch } from './view/Nomatch';
 import { Layout } from './Layout/Layout';
 import { Terms } from './view/Terms';
+import { About } from './view/About';
 import { Login } from './view/Login';
 import { Email } from './view/Email';
 import { ProtectedRoute } from './routes/ProtectedRoutes';

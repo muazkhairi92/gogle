@@ -7,13 +7,14 @@ export const Home = () => {
     const [count, setCount] = useState(0);
  
     return (
-    <main  style={{ padding: '1rem 0',display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center"}}>
+    <div  style={{ padding: '1rem 0',display:"flex",alignItems:"center",justifyContent:"center",alignContent:"center",width:"90vw"}}>
+      <div style={{display:"flex", flexDirection:"column", alignItems:"center"}}>
       <div>
           <img src={reactLogo} alt="React logo" />
       </div>
       <h1>Vitact</h1>
       <div>
-      <input placeholder='search..' style={{height:"30px"}}></input>
+      <input placeholder='search..' style={{height:"30px", borderRadius:"10px"}}></input>
       <button type="submit"><i className="fa fa-search"></i></button>
       </div>
       <div >
@@ -22,8 +23,8 @@ export const Home = () => {
         </button>
   
       </div>
+    </div>
 
-
-      </main>
+      </div>
     );
   };

@@ -39,9 +39,10 @@ export const Login = () => {
             signin(values);
             // checkPass();
           }}>
-                  <Form style={{display:"flex",flexDirection:"column", alignItems:"center"}}>
+                  <Form style={{width:"90vw",display:"flex" ,alignItems:'center', justifyContent:"center"}}>
+                    <div style={{display:"flex",flexDirection:"column", alignItems:"center", width:"60%", backgroundColor:"#FFE7CC",paddingBottom:"2%", borderRadius:"5%"}}>
                   <h3>Sign In</h3>
-                  <div style={{display:"flex"}}>
+                  <div style={{display:"flex",width:"80%", justifyContent:"space-between"}}>
                   <label htmlFor="email">Email: </label>
                   <div style={{display:"flex",flexDirection:"column"}}>
                   <Field name="email" type="text" />
@@ -49,7 +50,7 @@ export const Login = () => {
                   </div>
                   </div>
       
-                  <div style={{display:"flex"}}>
+                  <div style={{display:"flex" ,marginTop:"2%", width:"80%",justifyContent:"space-between"}}>
                   <label htmlFor="cpassword">Password: </label>
                   <div style={{display:"flex",flexDirection:"column"}}>
                   <Field name="cpassword" type="password" />
@@ -57,8 +58,8 @@ export const Login = () => {
                   </div>
                   </div>
       
-                  <MyButton type='submit' > Sign In</MyButton> 
-    
+                  <MyButton style={{width:"30%", backgroundColor:"#083AA9", color:"white", marginTop:"2%"}}type='submit' > Sign In</MyButton> 
+                  </div>
           
               </Form>
           </Formik>

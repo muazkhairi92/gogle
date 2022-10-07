@@ -9,7 +9,7 @@ const Users = () => {
   const {userss} = useSelector(state=>state.email);
 
   return (
-    <div style={{display:"flex",flexDirection:"column"}}>
+    <div style={{display:"flex",flexDirection:"column", justifyContent:'center',alignItems:"center",justifyItems:"center", width:"90vw"}}>
       <h2>This is the users database page</h2>
 
 
