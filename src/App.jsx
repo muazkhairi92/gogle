@@ -34,7 +34,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path={"/universities"} element={<Universities/>} />
-        <Route path={"/email/:id"} element={<ProtectedRoute><Email/></ProtectedRoute>} />
+        <Route path={"/email"} element={<ProtectedRoute><Email/></ProtectedRoute>} />
         <Route path={"/userdet"} element={<ProtectedRoute><UserDetail/></ProtectedRoute>} />
         <Route path={"/users"} element={<ProtectedRoute isAllowed={user?.roles.includes('admin')} redirectPath={'/home'}><Users/></ProtectedRoute>} />
         <Route path="/*" element={<Nomatch/>} />

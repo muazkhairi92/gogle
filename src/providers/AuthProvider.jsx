@@ -24,7 +24,7 @@ const AuthProvider = ({ children }) => {
             if(passSame){
                 setToken(u.token);
                 setUser(u);
-                navigate(`/email/${u.id}`);
+                navigate('/email');
             }
             else{
             navigate('not-authorized');
